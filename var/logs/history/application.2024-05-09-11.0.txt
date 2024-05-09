@@ -1,0 +1,742 @@
+Spring Kotlin Cassandra > [35m11:50:38.619[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:50:38.647[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 27724 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:50:38.648[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:50:39.159[0;39m [1;31m[main][0;39m ERROR [userId: ]  [36mo.s.boot.SpringApplication[0;39m - [34mApplication run failed
+[0;39mjava.lang.IllegalStateException: No Docker Compose file found in directory '/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/.'
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getComposeFile(DockerComposeLifecycleManager.java:147)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:108)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.github.senocak.skc.SpringKotlinCassandraApplicationKt.main(SpringKotlinCassandraApplication.kt:13)
+Spring Kotlin Cassandra > [35m11:52:12.201[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:52:12.221[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 27773 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:52:12.221[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:52:12.251[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.d.c.l.DockerComposeLifecycleManager[0;39m - [34mUsing Docker Compose file '/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/docker-compose.yml'
+[0;39mSpring Kotlin Cassandra > [35m11:52:12.965[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Network springkotlincassandra_cassandra  Creating
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.029[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Network springkotlincassandra_cassandra  Created
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.031[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Volume "springkotlincassandra_cassandra-data"  Creating
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.042[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Volume "springkotlincassandra_cassandra-data"  Created
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.043[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Creating
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.108[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Created
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.110[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Starting
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.464[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Started
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.464[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Waiting
+[0;39mSpring Kotlin Cassandra > [35m11:52:13.976[0;39m [34m[OutputReader-stderr][0;39m INFO  [userId: ]  [36mo.s.b.docker.compose.core.DockerCli[0;39m - [34m Container cassandra-container  Healthy
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.369[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.393[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 27860 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.394[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.857[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.858[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.872[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.873[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.938[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 78 ms. Found 1 Cassandra repository interface.
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.942[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.942[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:52:48.958[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.331[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.331[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.342[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.343[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.344[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 12 ms. Found 0 Reactive Cassandra repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.346[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.346[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.351[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Redis - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.356[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 9 ms. Found 2 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.483[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'dataSourceConfig' of type [com.github.senocak.skc.config.DataSourceConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [exceptionTranslation]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.484[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'cassandraConfig' of type [com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [exceptionTranslation] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.650[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat initialized with port 8081 (http)
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.656[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mInitializing ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.657[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStarting service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.658[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardEngine[0;39m - [34mStarting Servlet engine: [Apache Tomcat/10.1.20]
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.695[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - [34mInitializing Spring embedded WebApplicationContext
+[0;39mSpring Kotlin Cassandra > [35m11:52:49.696[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - [34mRoot WebApplicationContext: initialization completed in 1265 ms
+[0;39mSpring Kotlin Cassandra > [35m11:52:50.419[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.DefaultMavenCoordinates[0;39m - [34mDataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.17.0
+[0;39mSpring Kotlin Cassandra > [35m11:52:50.439[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:52:51.197[0;39m [34m[s0-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:52:51.238[0;39m [31m[s0-admin-1][0;39m WARN  [userId: ]  [36mc.d.o.d.i.c.c.ControlConnection[0;39m - [34m[s0] Error connecting to Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20), trying next node (ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel))
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.327[0;39m [1;31m[main][0;39m ERROR [userId: ]  [36mo.s.b.w.e.tomcat.TomcatStarter[0;39m - [34mError starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/security/JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userService' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.github.senocak.skc.domain.UserRepository defined in @EnableCassandraRepositories declared on CassandraConfig: Cannot resolve reference to bean 'cassandraTemplate' while setting bean property 'cassandraTemplate'
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.353[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStopping service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.356[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:257)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.356[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-timer-3-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/java.lang.Thread.sleep(Native Method)
+ app//io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:591)
+ app//io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:487)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.357[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.357[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.359[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - [34mException encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.486[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - [34m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39mSpring Kotlin Cassandra > [35m11:52:53.498[0;39m [1;31m[main][0;39m ERROR [userId: ]  [36mo.s.boot.SpringApplication[0;39m - [34mApplication run failed
+[0;39morg.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:618)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.github.senocak.skc.SpringKotlinCassandraApplicationKt.main(SpringKotlinCassandraApplication.kt:13)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:145)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:105)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:499)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/security/JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userService' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.github.senocak.skc.domain.UserRepository defined in @EnableCassandraRepositories declared on CassandraConfig: Cannot resolve reference to bean 'cassandraTemplate' while setting bean property 'cassandraTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4880)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.github.senocak.skc.domain.UserRepository defined in @EnableCassandraRepositories declared on CassandraConfig: Cannot resolve reference to bean 'cassandraTemplate' while setting bean property 'cassandraTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 56 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.github.senocak.skc.domain.UserRepository defined in @EnableCassandraRepositories declared on CassandraConfig: Cannot resolve reference to bean 'cassandraTemplate' while setting bean property 'cassandraTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cassandraTemplate' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Failed to instantiate [org.springframework.data.cassandra.core.CassandraAdminTemplate]: Factory method 'cassandraTemplate' threw exception with message: Error creating bean with name 'cassandraSessionFactory' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Unsatisfied dependency expressed through method 'cassandraSessionFactory' parameter 0: Error creating bean with name 'cassandraSession' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 84 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.cassandra.core.CassandraAdminTemplate]: Factory method 'cassandraTemplate' threw exception with message: Error creating bean with name 'cassandraSessionFactory' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Unsatisfied dependency expressed through method 'cassandraSessionFactory' parameter 0: Error creating bean with name 'cassandraSession' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 94 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cassandraSessionFactory' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Unsatisfied dependency expressed through method 'cassandraSessionFactory' parameter 0: Error creating bean with name 'cassandraSession' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334)
+	at org.springframework.data.cassandra.config.AbstractSessionConfiguration.requireBeanOfType(AbstractSessionConfiguration.java:103)
+	at org.springframework.data.cassandra.config.AbstractCassandraConfiguration.getRequiredSessionFactory(AbstractCassandraConfiguration.java:240)
+	at org.springframework.data.cassandra.config.AbstractCassandraConfiguration.cassandraTemplate(AbstractCassandraConfiguration.java:166)
+	at com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0.CGLIB$cassandraTemplate$19(<generated>)
+	at com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$FastClass$$0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0.cassandraTemplate(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 95 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cassandraSession' defined in class path resource [com/github/senocak/skc/config/CassandraConfig.class]: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 122 common frames omitted
+Caused by: com.datastax.oss.driver.api.core.AllNodesFailedException: Could not reach any contact point, make sure you've provided valid addresses (showing first 1 nodes, use getAllErrors() for more): Node(endPoint=localhost/<unresolved>:9042, hostId=null, hashCode=5d757b20): [com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)]
+	at com.datastax.oss.driver.api.core.AllNodesFailedException.copy(AllNodesFailedException.java:141)
+	at com.datastax.oss.driver.internal.core.util.concurrent.CompletableFutures.getUninterruptibly(CompletableFutures.java:149)
+	at com.datastax.oss.driver.api.core.session.SessionBuilder.build(SessionBuilder.java:835)
+	at org.springframework.data.cassandra.config.CqlSessionFactoryBean.buildSystemSession(CqlSessionFactoryBean.java:535)
+	at org.springframework.data.cassandra.config.CqlSessionFactoryBean.afterPropertiesSet(CqlSessionFactoryBean.java:469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 133 common frames omitted
+	Suppressed: com.datastax.oss.driver.api.core.connection.ConnectionInitException: [s0|control|id: 0x1ddc0a5e, L:/127.0.0.1:59059 - R:localhost/127.0.0.1:9042] Protocol initialization request, step 1 (OPTIONS): unexpected failure (com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel)
+		at com.datastax.oss.driver.internal.core.channel.ProtocolInitHandler$InitRequest.fail(ProtocolInitHandler.java:356)
+		at com.datastax.oss.driver.internal.core.channel.ChannelHandlerRequest.onFailure(ChannelHandlerRequest.java:104)
+		at com.datastax.oss.driver.internal.core.channel.InFlightHandler.fail(InFlightHandler.java:381)
+		at com.datastax.oss.driver.internal.core.channel.InFlightHandler.abortAllInFlight(InFlightHandler.java:371)
+		at com.datastax.oss.driver.internal.core.channel.InFlightHandler.abortAllInFlight(InFlightHandler.java:353)
+		at com.datastax.oss.driver.internal.core.channel.InFlightHandler.exceptionCaught(InFlightHandler.java:299)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1377)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+		at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:907)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:125)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:177)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+	Caused by: com.datastax.oss.driver.api.core.connection.ClosedConnectionException: Unexpected error on channel
+	Caused by: java.net.SocketException: Connection reset
+		at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+		at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+		at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255)
+		at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+		at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+Spring Kotlin Cassandra > [35m11:54:39.319[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.341[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 27938 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.342[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.790[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.791[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.806[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.807[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.866[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 73 ms. Found 1 Cassandra repository interface.
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.869[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.869[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:54:39.876[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.229[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.230[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.239[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.239[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.240[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 10 ms. Found 0 Reactive Cassandra repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.242[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.242[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.247[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Redis - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.251[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 9 ms. Found 2 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.380[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'dataSourceConfig' of type [com.github.senocak.skc.config.DataSourceConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [exceptionTranslation]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.380[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'cassandraConfig' of type [com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [exceptionTranslation] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.553[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat initialized with port 8081 (http)
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.558[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mInitializing ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.559[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStarting service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.559[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardEngine[0;39m - [34mStarting Servlet engine: [Apache Tomcat/10.1.20]
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.595[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - [34mInitializing Spring embedded WebApplicationContext
+[0;39mSpring Kotlin Cassandra > [35m11:54:40.596[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - [34mRoot WebApplicationContext: initialization completed in 1220 ms
+[0;39mSpring Kotlin Cassandra > [35m11:54:41.230[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.DefaultMavenCoordinates[0;39m - [34mDataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.17.0
+[0;39mSpring Kotlin Cassandra > [35m11:54:41.247[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:54:41.652[0;39m [34m[s0-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:54:41.891[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:54:41.891[0;39m [34m[s1-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.154[0;39m [1;31m[main][0;39m ERROR [userId: ]  [36mo.s.b.w.e.tomcat.TomcatStarter[0;39m - [34mError starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/security/JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userService' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 4: Error creating bean with name 'webSecurityConfig' defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/config/WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference?
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.170[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStopping service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.172[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:257)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.172[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-timer-3-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/java.lang.Thread.sleep(Native Method)
+ app//io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:591)
+ app//io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:487)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.173[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.173[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [lettuce-nioEventLoop-4-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.173[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/java.lang.Thread.sleep(Native Method)
+ app//io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:591)
+ app//io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:487)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.173[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-admin-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:257)
+ app//io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:52)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-admin-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:52)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-io-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-io-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-io-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:883)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s0-io-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:883)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.174[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/java.lang.Thread.sleep(Native Method)
+ app//io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:591)
+ app//io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:487)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-admin-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:257)
+ app//io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:52)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-admin-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.10/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.10/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:52)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-io-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-io-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-io-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:883)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.175[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.a.c.loader.WebappClassLoaderBase[0;39m - [34mThe web application [ROOT] appears to have started a thread named [s1-io-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.10/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:883)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+[0;39mSpring Kotlin Cassandra > [35m11:54:42.176[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - [34mException encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+[0;39mSpring Kotlin Cassandra > [35m11:54:46.483[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m - [34m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39mSpring Kotlin Cassandra > [35m11:54:46.496[0;39m [1;31m[main][0;39m ERROR [userId: ]  [36mo.s.b.d.LoggingFailureAnalysisReporter[0;39m - [34m
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/security/JwtAuthenticationFilter.class]
+↑     ↓
+|  userService defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/service/UserService.class]
+↑     ↓
+|  webSecurityConfig defined in file [/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main/com/github/senocak/skc/config/WebSecurityConfig.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.083[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.099[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 27980 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.100[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.569[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.569[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.591[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.592[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.657[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 85 ms. Found 1 Cassandra repository interface.
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.660[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.661[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:55:49.668[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.031[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.032[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.043[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.043[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.044[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 12 ms. Found 0 Reactive Cassandra repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.046[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.046[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.057[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Redis - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.061[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 14 ms. Found 2 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.204[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'dataSourceConfig' of type [com.github.senocak.skc.config.DataSourceConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [exceptionTranslation]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.204[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'cassandraConfig' of type [com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [exceptionTranslation] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.383[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat initialized with port 8081 (http)
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.388[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mInitializing ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.389[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStarting service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.389[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardEngine[0;39m - [34mStarting Servlet engine: [Apache Tomcat/10.1.20]
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.417[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - [34mInitializing Spring embedded WebApplicationContext
+[0;39mSpring Kotlin Cassandra > [35m11:55:50.417[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - [34mRoot WebApplicationContext: initialization completed in 1288 ms
+[0;39mSpring Kotlin Cassandra > [35m11:55:51.103[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.DefaultMavenCoordinates[0;39m - [34mDataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.17.0
+[0;39mSpring Kotlin Cassandra > [35m11:55:51.121[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:55:51.547[0;39m [34m[s0-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:55:51.704[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:55:51.705[0;39m [34m[s1-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.406[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - [34mExposing 1 endpoint(s) beneath base path '/actuator'
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.446[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - [34mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@efe75a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a49cdd6, org.springframework.security.web.context.SecurityContextHolderFilter@5ae5a507, org.springframework.security.web.header.HeaderWriterFilter@21312b5, org.springframework.web.filter.CorsFilter@109a462e, org.springframework.security.web.authentication.logout.LogoutFilter@606c2e4b, com.github.senocak.skc.security.JwtAuthenticationFilter@5b132063, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3217e970, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d0d5147, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@258e5601, org.springframework.security.web.session.SessionManagementFilter@66464f27, org.springframework.security.web.access.ExceptionTranslationFilter@1b5a3bba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@80347b2]
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.488[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.c.AppConfig$$SpringCGLIB$$0[0;39m - [34mCore pool size: 10, max pool size: 10000,keepAliveSeconds: 60, queueCapacity: -1,queueSize: 0
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.707[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mStarting ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.712[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat started on port 8081 (http) with context path ''
+[0;39mSpring Kotlin Cassandra > [35m11:55:52.726[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarted SpringKotlinCassandraApplicationKt in 3.817 seconds (process running for 4.286)
+[0;39mSpring Kotlin Cassandra > [35m11:56:01.575[0;39m [34m[task-2][0;39m INFO  [userId: scheduler]  [36mc.g.s.skc.service.ScheduledTasks[0;39m - [34mPerformance(timestamp=2024-05-130 11:56:01, committedVirtualMemorySize=427695800320, totalSwapSpaceSize=2147483648, freeSwapSpaceSize=1344012288, totalMemorySize=17179869184, freeMemorySize=66486272, cpuLoad=0.0, processCpuLoad=0.0, availableProcessors=10, totalMemory=119.54 MB, maxMemory=4.29 GB, freeMemory=54.05 MB)
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.301[0;39m [34m[background-preinit][0;39m INFO  [userId: ]  [36mo.h.validator.internal.util.Version[0;39m - [34mHV000001: Hibernate Validator 8.0.1.Final
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.323[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarting SpringKotlinCassandraApplicationKt using Java 17.0.10 with PID 28011 (/Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/Spring Kotlin Cassandra)
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.324[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mNo active profile set, falling back to 1 default profile: "default"
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.806[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.806[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.821[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.822[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.CassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.886[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 77 ms. Found 1 Cassandra repository interface.
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.889[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.889[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:56:09.896[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.283[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.284[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.295[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.JwtTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.295[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Reactive Cassandra - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.PasswordResetTokenRepository; If you want this repository to be a Reactive Cassandra repository, consider annotating your entities with one of these annotations: org.springframework.data.cassandra.core.mapping.Table (preferred), or consider extending one of the following types with your repository: org.springframework.data.cassandra.repository.ReactiveCassandraRepository
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.296[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 12 ms. Found 0 Reactive Cassandra repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.298[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mMultiple Spring Data modules found, entering strict repository configuration mode
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.298[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mBootstrapping Spring Data Redis repositories in DEFAULT mode.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.303[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - [34mSpring Data Redis - Could not safely identify store assignment for repository candidate interface com.github.senocak.skc.domain.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.307[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - [34mFinished Spring Data repository scanning in 8 ms. Found 2 Redis repository interfaces.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.452[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'dataSourceConfig' of type [com.github.senocak.skc.config.DataSourceConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [exceptionTranslation]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.453[0;39m [31m[main][0;39m WARN  [userId: ]  [36mo.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - [34mBean 'cassandraConfig' of type [com.github.senocak.skc.config.CassandraConfig$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [exceptionTranslation] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.644[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat initialized with port 8081 (http)
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.649[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mInitializing ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.650[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardService[0;39m - [34mStarting service [Tomcat]
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.650[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.catalina.core.StandardEngine[0;39m - [34mStarting Servlet engine: [Apache Tomcat/10.1.20]
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.680[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - [34mInitializing Spring embedded WebApplicationContext
+[0;39mSpring Kotlin Cassandra > [35m11:56:10.680[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - [34mRoot WebApplicationContext: initialization completed in 1322 ms
+[0;39mSpring Kotlin Cassandra > [35m11:56:11.455[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.DefaultMavenCoordinates[0;39m - [34mDataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.17.0
+[0;39mSpring Kotlin Cassandra > [35m11:56:11.473[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:56:11.857[0;39m [34m[s0-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.017[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.d.o.d.i.c.c.CqlPrepareAsyncProcessor[0;39m - [34mAdding handler to invalidate cached prepared statements on type changes
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.017[0;39m [34m[s1-admin-0][0;39m INFO  [userId: ]  [36mc.d.o.d.internal.core.time.Clock[0;39m - [34mUsing native clock for microsecond precision
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.681[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.a.e.web.EndpointLinksResolver[0;39m - [34mExposing 1 endpoint(s) beneath base path '/actuator'
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.721[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.s.web.DefaultSecurityFilterChain[0;39m - [34mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77c4aeb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54455c8d, org.springframework.security.web.context.SecurityContextHolderFilter@1912ba29, org.springframework.security.web.header.HeaderWriterFilter@446dc997, org.springframework.web.filter.CorsFilter@80347b2, org.springframework.security.web.authentication.logout.LogoutFilter@626e5554, com.github.senocak.skc.security.JwtAuthenticationFilter@7d8a5ec7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b72289, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b8f1c62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eb65fc8, org.springframework.security.web.session.SessionManagementFilter@2202e978, org.springframework.security.web.access.ExceptionTranslationFilter@25bfc558, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45aa02de]
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.761[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.c.AppConfig$$SpringCGLIB$$0[0;39m - [34mCore pool size: 10, max pool size: 10000,keepAliveSeconds: 60, queueCapacity: -1,queueSize: 0
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.982[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.a.coyote.http11.Http11NioProtocol[0;39m - [34mStarting ProtocolHandler ["http-nio-8081"]
+[0;39mSpring Kotlin Cassandra > [35m11:56:12.987[0;39m [34m[main][0;39m INFO  [userId: ]  [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - [34mTomcat started on port 8081 (http) with context path ''
+[0;39mSpring Kotlin Cassandra > [35m11:56:13.000[0;39m [34m[main][0;39m INFO  [userId: ]  [36mc.g.s.s.SpringKotlinCassandraApplicationKt[0;39m - [34mStarted SpringKotlinCassandraApplicationKt in 3.865 seconds (process running for 4.274)
+[0;39mSpring Kotlin Cassandra > [35m11:56:31.914[0;39m [1;31m[task-1][0;39m ERROR [userId: ]  [36mo.s.a.i.SimpleAsyncUncaughtExceptionHandler[0;39m - [34mUnexpected exception occurred invoking async method: public void com.github.senocak.skc.service.Listeners.onApplicationReadyEvent(org.springframework.boot.context.event.ApplicationReadyEvent)
+[0;39morg.springframework.data.cassandra.CassandraInvalidQueryException: Query; CQL [INSERT INTO users (name,email,password,roles,emailactivationtoken,emailactivatedat,secondname,secondrank,id,createdat,updatedat) VALUES (?,?,?,?,?,?,?,?,?,?,?)]; table users does not exist
+	at org.springframework.data.cassandra.core.cql.CassandraExceptionTranslator.translate(CassandraExceptionTranslator.java:125)
+	at org.springframework.data.cassandra.core.cql.CassandraAccessor.translate(CassandraAccessor.java:421)
+	at org.springframework.data.cassandra.core.cql.CqlTemplate.translateException(CqlTemplate.java:551)
+	at org.springframework.data.cassandra.core.cql.CqlTemplate.query(CqlTemplate.java:409)
+	at org.springframework.data.cassandra.core.CassandraTemplate.doExecute(CassandraTemplate.java:886)
+	at org.springframework.data.cassandra.core.CassandraTemplate.doExecute(CassandraTemplate.java:874)
+	at org.springframework.data.cassandra.core.CassandraTemplate.executeSave(CassandraTemplate.java:825)
+	at org.springframework.data.cassandra.core.CassandraTemplate.executeSave(CassandraTemplate.java:816)
+	at org.springframework.data.cassandra.core.CassandraTemplate.doInsert(CassandraTemplate.java:644)
+	at org.springframework.data.cassandra.core.CassandraTemplate.doInsert(CassandraTemplate.java:627)
+	at org.springframework.data.cassandra.core.CassandraTemplate.insert(CassandraTemplate.java:608)
+	at org.springframework.data.cassandra.repository.support.SimpleCassandraRepository.save(SimpleCassandraRepository.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.MethodInvocationValidator.invoke(MethodInvocationValidator.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy178.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy179.save(Unknown Source)
+	at com.github.senocak.skc.service.UserService.save(UserService.kt:71)
+	at com.github.senocak.skc.service.Listeners.onApplicationReadyEvent(Listeners.kt:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.datastax.oss.driver.api.core.servererrors.InvalidQueryException: table users does not exist
+	at com.datastax.oss.driver.api.core.servererrors.InvalidQueryException.copy(InvalidQueryException.java:48)
+	at com.datastax.oss.driver.internal.core.util.concurrent.CompletableFutures.getUninterruptibly(CompletableFutures.java:149)
+	at com.datastax.oss.driver.internal.core.cql.CqlPrepareSyncProcessor.process(CqlPrepareSyncProcessor.java:59)
+	at com.datastax.oss.driver.internal.core.cql.CqlPrepareSyncProcessor.process(CqlPrepareSyncProcessor.java:31)
+	at com.datastax.oss.driver.internal.core.session.DefaultSession.execute(DefaultSession.java:230)
+	at com.datastax.oss.driver.api.core.cql.SyncCqlSession.prepare(SyncCqlSession.java:224)
+	at org.springframework.data.cassandra.core.CassandraTemplate$PreparedStatementHandler.createPreparedStatement(CassandraTemplate.java:999)
+	at org.springframework.data.cassandra.core.cql.CqlTemplate.query(CqlTemplate.java:395)
+	... 58 common frames omitted

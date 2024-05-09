@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  cassandra:
+    image: cassandra:5.0
+    container_name: cassandra-container
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_USER=anil
+      - CASSANDRA_PASSWORD=senocak
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+    networks:
+      - cassandra
+volumes:
+  cassandra-data:
+networks:
+  cassandra:

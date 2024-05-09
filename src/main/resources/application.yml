@@ -1,0 +1,68 @@
+server:
+    port: ${SERVER_PORT:8081}
+    compression:
+        enabled: true
+spring:
+    application:
+        name: Spring Kotlin Cassandra
+    #data:
+    #  cassandra:
+    #    local-datacenter: datacenter1
+    #    keyspace-name: asenocak
+    #    port: 9042
+    datasource:
+        contactPoints: localhost
+        keyspaceName: asenocak
+        port: 9042
+        ddl: create
+    messages:
+        basename: locales.messages
+        encoding: UTF-8
+        cache-duration: ${MESSAGES_CACHE_DURATION:-1}
+    jackson:
+        serialization:
+            WRITE_DATES_AS_TIMESTAMPS: false
+        deserialization:
+            fail-on-unknown-properties: true
+        time-zone: UTC
+        mapper:
+            sort-properties-alphabetically: false
+    docker:
+        compose:
+            enabled: false
+            lifecycle-management: none
+app:
+    jwtSecret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
+    jwtExpirationInMs: '#{60 * 50 * 1000}' # 50 minutes in milliseconds
+    refreshExpirationInMs: '#{24 * 60 * 60 * 1000}' # 24 hours in milliseconds
+    default-locale: en
+    frontend-url: ${APP_FRONTEND_URL:http://localhost:3232}
+    mail:
+        host: ${MAIL_HOST:smtp.ethereal.email}
+        port: ${MAIL_PORT:587}
+        protocol: ${MAIL_PROTOCOL:smtp}
+        username: ${MAIL_USERNAME:cristina.luettgen@ethereal.email}
+        password: ${MAIL_PASSWORD:8h7fsteeM62vs2Wnk9}
+        smtp:
+            socketFactory:
+                port: 465
+                fallback: false
+            auth: true
+            starttls:
+                enable: true
+                required: true
+    redis:
+        HOST: ${REDIS_HOST:localhost}
+        PORT: ${REDIS_PORT:6379}
+        PASSWORD: ${REDIS_PASSWORD:senocak}
+        TIMEOUT: ${REDIS_TIMEOUT:300}
+springdoc:
+    api-docs:
+        path: /api/v1/swagger
+    version: 1
+logging:
+    level:
+        org:
+            springframework:
+                data:
+                    cassandra: debug
